@@ -1,0 +1,15 @@
+{% extends "Trainingapp/base.html" %}
+{% block body_block %}
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Consultadd</h1>
+    {% if user.is_authenticated %}
+        <h2>Welcome {{ user.first_name }}!</h2>
+    {% else %}
+        <h2>Welcome to the COnsultadd!</h2>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}
